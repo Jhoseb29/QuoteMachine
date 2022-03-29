@@ -1,38 +1,128 @@
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+code {
+  font-family: source-code-pro,Menlo,Monaco,Consolas,"Courier New",monospace
+}
+
 .App {
-  text-align: center;
+  text-align: center
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px
 }
 
-.App-link {
-  color: #61dafb;
+
+.container .card{
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  margin: 0 auto
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .card .circle{
+  position: relative;
+  width: 100%;
+  height: 18%;
+  background: #000;
+  clip-path: circle(88px at center 0);
+  
+}
+
+.container .card .circle button{
+  margin: 1.5rem 0;
+}
+
+
+.quote{
+  font-size: 25px;
+  margin-right: 280px;
+}
+
+.container .card .content{
+  position: fixed;
+  width: 25%;
+  font-size: 20px;
+  margin: 0 40px 0;
+  transition: 0.5s;
+}
+.author {
+  text-align: center;
+  margin: 280px 0 6px;
+  font-size: 25px;
+}
+
+ .btn-twt{
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  background-color: #00acee
+}
+
+
+
+button {
+  padding: 8px 0;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: 0;
+  outline: 0;
+  cursor: pointer
+}
+
+button i {
+  color: #fff;
+  font-size: 1.3rem
+}
+
+.yellow {
+  background-image: linear-gradient(to right, #e0e737, #c8d43d, #b2c141, #9daf43, #8a9c44, #7f9041, #75853e, #6b793b, #667236, #606a30, #5b632b, #555c26);
+  color: #9e9e03
+}
+
+.green {
+  background-image: linear-gradient(to right, #3abb2d, #30b142, #2ca750, #2f9d5b, #369262, #398b64, #3c8565, #407e65, #3e7a63, #3c7662, #3a7360, #386f5e);
+  color: green
+}
+
+.red {
+  background-image: linear-gradient(to right, #bb2d2d, #c93860, #c8528f, #ba6eb7, #a389d4, #8f9ce6, #7aaef2, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  color: red
+}
+
+.blue {
+  background-image: linear-gradient(to right, #160de7, #002bd8, #003ac8, #1843b5, #2e4aa0, #344993, #384986, #3c4879, #364272, #313c6a, #2b3663, #26305c);
+  color: #00f
+}
+
+.orange {
+  background-image: linear-gradient(to right, #c26635, #b56636, #a96538, #9d643b, #92633e, #8a5f3d, #815c3d, #79583c, #725136, #6a4a31, #63442b, #5c3d26);
+  color: rgb(255, 94, 0)
 }
